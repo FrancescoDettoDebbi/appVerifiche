@@ -1,0 +1,3 @@
+Quanto da 2 + 2?;1;la lettera 'q';2;3;4
+Quanto fa 2 + 2?<div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><div class="line"></div><button class="destroy">X</button>
+2 + 2 = 4?<div class="options"><button class="boolean true">V</button><button class="boolean false">F</button></div><button class="destroy">X</button>
