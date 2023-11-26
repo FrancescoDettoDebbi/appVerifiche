@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>verifica</title>
+    <link rel="stylesheet" href="verifica.css">
+</head>
+<body>
+<div class="header">
+    Nome:____________________
+    Cognome:____________________
+    Classe:_____
+    Data:__/__/____
+</div>
+<div class="container">
+    <ol class="questions">
+
+    </ol>
+</div>
+<div class="utils">
+    <button class="print-btn" onclick="stampa()">STAMPA</button>
+    <select id="question-type">
+        <option name="chiusa" value="chiusa" id="chiusa">Chiusa</option>
+        <option name="aperta" value="aperta" id="aperta">Aperta</option>
+        <option name="bool" value="bool" id="bool">Vero / Falso</option>
+    </select>
+    <div class="create">
+        <label for="domanda">Domanda: </label>
+        <input type="text" name="domanda" id="domanda" class="domanda"><br>
+        <label for="ans-1">risposta 1: </label>
+        <input type="text" name="ans-1" id="ans-1" class="risposta">
+        <label for="ans-1">risposta 2: </label>
+        <input type="text" name="ans-2" id="ans-2" class="risposta"><br>
+        <label for="ans-1">risposta 3: </label>
+        <input type="text" name="ans-3" id="ans-3" class="risposta">
+        <label for="ans-1">risposta 4: </label>
+        <input type="text" name="ans-4" id="ans-4" class="risposta"><br>
+        <label for="ans-1">risposta 5: </label>
+        <input type="text" name="ans-5" id="ans-5" class="risposta">
+        <label for="ans-1">risposta 6: </label>
+        <input type="text" name="ans-6" id="ans-6" class="risposta"><br>
+        <label for="ans-1">risposta 7: </label>
+        <input type="text" name="ans-7" id="ans-7" class="risposta">
+        <label for="ans-1">risposta 8: </label>
+        <input type="text" name="ans-8" id="ans-8" class="risposta">
+        <button class="add-btn" onclick="addQuestion()">Aggiungi</button>
+        <input type="file" name="fileInput" id="fileInput">
+        <button onclick="csvUpload()" class="load-btn"> Carica </button>
+        <button onclick="downloadCsv()">Scarica il file CSV</button>
+    </div>
+</div>
+<script src="verifica.js"></script>
+</body>
+</html>
